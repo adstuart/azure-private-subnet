@@ -33,8 +33,13 @@ Baseline verification tests = all OK, all outbound scenarios enabled via NAT GW 
 
 Conclusion - Outbound access disabled as per Private Subnet feature purpose. Access to Storage still possible via Service Endpoint.
 
-# [3] Repeat Service Endpoint test with different PaaS service
+# [3] Repeat Service Endpoint test with different PaaS services
 
 - leave lab as per [2], private subnet = enabled, no NAT-GW
-- 
+  
+- deploy static web app, access = **broken**
+- enable service endpoint for Microsoft.Web, access = **still broken**
+
+- deploy SQL database access = **broken**
+- enable service endpoint for Microsoft.SQL, access = **OK**
 
