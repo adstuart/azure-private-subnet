@@ -37,9 +37,15 @@ Conclusion - Outbound access disabled as per Private Subnet feature purpose. Acc
 
 - leave lab as per [2], private subnet = enabled, no NAT-GW
   
-- deploy static web app, access = **broken**
-- enable service endpoint for Microsoft.Web, access = **still broken**
+- deploy Web App, access = **broken**
+- enable service endpoint for Microsoft.Web, access = **OK**
 
-- deploy SQL database access = **broken**
+- deploy SQL database, access = **broken**
 - enable service endpoint for Microsoft.SQL, access = **OK**
+
+- deploy Eventhub, try access to Service Bus endpoint = **broken**
+- enable service endpoint for Microsoft.EventHub, access = **OK**
+
+Conclusion - Outbound access to Service Endpoints is unaffected by Private Subnet feature. In other words, access to PaaS services over Service Endpoints will continue to function, even after deprecation of default Internet Outbound access.
+
 
