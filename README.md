@@ -1,3 +1,9 @@
+> ⚠️ **Archived — April 2026**
+>
+> These were raw testing notes from the Private Subnet feature when it was in preview. The feature is now GA and fully documented at [Default outbound access for VMs in Azure](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access).
+
+---
+
 # azure-private-subnet
 Terse logs from testing Private Subnet feature (preview)
 
